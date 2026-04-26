@@ -1,0 +1,403 @@
+header {
+  width: 100%;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #84a178;
+}
+header .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80px;
+}
+header .header__container {
+  width: 100%;
+  height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 422px;
+}
+header .buy__btn {
+  display: none;
+}
+header .header__container > nav {
+  display: none;
+}
+header .hero__rainbow {
+  display: none;
+}
+@media (min-width: 425px) {
+  header {
+    height: 415px;
+  }
+}
+
+.header__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 422px;
+}
+.header__hero .header__hero-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  height: 420px;
+}
+.header__hero .hero__img-container {
+  height: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(/src/images/HeaderBackYellowLineForMobile.png);
+  background-repeat: no-repeat;
+  background-size: 105% 30%;
+  background-position: bottom;
+}
+.header__hero .hero__img-container > div {
+  display: none;
+}
+.header__hero .hero__img-container > img {
+  max-width: 207px;
+  height: 237px;
+  margin-top: -44px;
+  margin-left: 10px;
+}
+.header__hero .hero__info {
+  width: 70%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.header__hero .hero__buy {
+  max-width: 247px;
+}
+.header__hero .hero__buy > h2 {
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #fcfcfc;
+}
+.header__hero .hero__buy > h2 > span {
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 96%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.header__hero .hero__buy > div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.header__hero .hero__buy > div > button {
+  max-width: 108px;
+  min-width: 107px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px #f8d24e solid;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+.header__hero .hero__buy > div > a {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #f8d24e;
+}
+@media (min-width: 425px) {
+  .header__hero .hero__img-container {
+    justify-content: end;
+    background-size: 245px 50px;
+    background-position: bottom right;
+    margin-bottom: 150px;
+  }
+  .header__hero .hero__img-container > img {
+    margin-left: 0;
+  }
+  .header__hero .hero__info {
+    margin-top: 10px;
+  }
+}
+
+.hero {
+  height: 2136px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/images/BackIceCreamForMobile.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.hero .hero__container {
+  width: 100%;
+  height: 2136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 200px;
+}
+.hero .hero__container > div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+.hero .hero__art-IceCream {
+  max-width: 280px;
+  min-width: 280px;
+  height: 420px;
+  background-color: #aec6a5;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.hero .hero__art-IceCoffee {
+  max-width: 280px;
+  min-width: 280px;
+  height: 420px;
+  background-color: #efd478;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.hero .hero__art-Milkshakes {
+  max-width: 280px;
+  min-width: 280px;
+  height: 420px;
+  background-color: #d6936d;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.hero .hero__circle-IceCream {
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  background-color: #aec6a5;
+  box-shadow: 0px 5.34px 20.03px 0px rgba(10, 136, 23, 0.2509803922);
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  left: 14%;
+}
+.hero .hero__circle-IceCoffee {
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  background-color: #efd478;
+  box-shadow: 0px 5.4px 20.26px 0px rgba(153, 114, 23, 0.2509803922);
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  left: 14%;
+}
+.hero .hero__circle-Milkshakes {
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  background-color: #d6936d;
+  box-shadow: 0px 5.41px 20.3px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  left: 14%;
+}
+.hero .hero__circle-IceCream > div {
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(/src/images/IceCream.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -10px;
+}
+.hero .hero__circle-IceCoffee > div {
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(/src/images/IceCoffee.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -10px;
+}
+.hero .hero__circle-Milkshakes > div {
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(/src/images/Milkshakes.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -10px;
+}
+.hero .IceCream__info {
+  width: 95%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hero .IceCoffee__info {
+  width: 95%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hero .Milkshakes__info {
+  width: 95%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hero .IceCream__info > p {
+  max-width: 200px;
+  text-align: center;
+  margin-top: -30px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: center;
+}
+.hero .IceCoffee__info > p {
+  max-width: 200px;
+  text-align: center;
+  margin-top: -30px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: center;
+}
+.hero .Milkshakes__info > p {
+  max-width: 200px;
+  text-align: center;
+  margin-top: -30px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 4%;
+  text-align: center;
+}
+.hero .IceCream__info > h3 {
+  margin-bottom: -10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero .IceCoffee__info > h3 {
+  margin-bottom: -10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero .Milkshakes__info > h3 {
+  margin-bottom: -10px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero .hero__container > h2 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 270px;
+  margin-top: 100px;
+}
+.hero .hero__container > h2 > span {
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */

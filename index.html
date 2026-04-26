@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -55,17 +59,27 @@
                 <li><a href="">Contact</a></li>
               </ul>
             </nav>
-            <div class="buy__btn">
-              <button>Buy now</button>
-              <img src="" alt="" />
+            <div>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.7333 14H5.26667C4.56711 14 4 14.4253 4 14.95V15.05C4 15.5747 4.56711 16 5.26667 16H26.7333C27.4329 16 28 15.5747 28 15.05V14.95C28 14.4253 27.4329 14 26.7333 14Z" fill="white"/>
+              <path d="M26.7333 20H5.26667C4.56711 20 4 20.4253 4 20.95V21.05C4 21.5747 4.56711 22 5.26667 22H26.7333C27.4329 22 28 21.5747 28 21.05V20.95C28 20.4253 27.4329 20 26.7333 20Z" fill="white"/>
+              <path d="M26.7333 8H5.26667C4.56711 8 4 8.42533 4 8.95V9.05C4 9.57467 4.56711 10 5.26667 10H26.7333C27.4329 10 28 9.57467 28 9.05V8.95C28 8.42533 27.4329 8 26.7333 8Z" fill="white"/>
+              </svg>
+              <div class="buy__btn">
+                <button>Buy now</button>
+                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60389 12.1394L1.1047 19.6386C0.128388 20.6149 0.128388 22.1978 1.1047 23.1741C2.08101 24.1504 3.66392 24.1504 4.64023 23.1741L13.945 13.8693C14.9213 12.893 14.9213 11.3101 13.945 10.3338C13.8197 10.2085 13.6844 10.0993 13.5417 10.0061L4.2678 0.732233C3.29149 -0.244078 1.70858 -0.244078 0.732269 0.732233C-0.244041 1.70854 -0.244041 3.29146 0.732269 4.26777L8.60389 12.1394Z" fill="#020B20"/>
+                </svg>
+              </div>
             </div>
           </div>
         </section>
+
         <section class="header__hero">
           <div class="header__hero-cont">
             <div class="hero__info">
               <div class="hero__buy">
-                <h2>ice cream made with passion</h2>
+                <h2>ice cream made with <span>passion</span></h2>
                 <div>
                   <button>Products</button>
                   <a href="">How it’s made?</a>
@@ -83,7 +97,7 @@
               </div>
             </div>
             <div class="hero__img-container">
-              <img src="" alt="" />
+              <img src="/src/images/IceCreamForMobile.webp" alt="" />
               <div>
                 <div class="hero__cafes">
                   <h3>16</h3>
@@ -113,7 +127,7 @@
                     Soft ice cream with a delicate taste. Made with milk, cream,
                     sugar and natural stabilizer
                   </p>
-                  <img src="" alt="" />
+                  <img src="/src/icons/ArrowLong.png" alt="" />
                 </div>
               </article>
               <article class="hero__art-IceCoffee">
@@ -127,7 +141,7 @@
                     ingredients without the use of preservatives and flavor
                     enhancers
                   </p>
-                  <img src="" alt="" />
+                  <img src="/src/icons/ArrowLong.png" alt="" />
                 </div>
               </article>
               <article class="hero__art-Milkshakes">
@@ -140,7 +154,7 @@
                     Sweet drinks based on milk and ice cream, supplemented with
                     syrups, fruits, berries and other sweets of your choice
                   </p>
-                  <img src="" alt="" />
+                  <img src="/src/icons/ArrowLong.png" alt="" />
                 </div>
               </article>
             </div>
@@ -240,7 +254,7 @@
             </div>
           </div>
         </section>
-        
+
        <section class="locations">
          <div class="container">
          <div class="cards__grid">
@@ -297,10 +311,10 @@
   <div class="container">
     <div class="feedback__flex">
       <h2 class="feedback__title">
-        HOMEMADE ICE CREAM MADE 
+        HOMEMADE ICE CREAM MADE
         <span class="feedback__accent">WITH PASSION</span>
       </h2>
-      
+
       <div class="feedback__channels">
         <div class="social__box">
           <a href="#" class="social__item">Github</a>
