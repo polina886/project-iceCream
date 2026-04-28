@@ -1,0 +1,99 @@
+.reviews {
+    background-image: url('../src/images/BackIceCreamForMobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: visible; 
+    position: relative;
+    z-index: 2;
+
+    &__container {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0 20px 60px;
+        @include flex-column-center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__gallery {
+        width: 280px;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY(-30px); 
+        z-index: 3;
+    }
+
+    &__gallery-img {
+        width: 280px;
+        height: 130px;
+        border-radius: $radius-img;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__slider {
+        @include flex-column-center;
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    &__author-avatar {
+        @include circle-image(85px);
+        margin-bottom: 32px;
+        border: 3px solid $color-white;
+    }
+
+    &__card {
+        width: 280px;
+        min-height: 256px;
+        border-radius: $radius-card;
+        background-color: $color-green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 52px 24px 32px;
+        box-sizing: border-box;
+        margin-bottom: 32px
+    }
+
+    &__text {
+        @include montserrat(400, 12px, 255%, $color-white);
+        letter-spacing: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__author-name {
+        @include montserrat(500, 20px, 186%, $color-dark);
+        width: 189px;
+        letter-spacing: 0;
+        text-align: center;
+        margin: 16px 0 0;
+    }
+
+    &__dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 72px;
+        margin-top: 12px;
+    }
+
+    &__dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $color-dot-inactive;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+
+        &--active {
+            background-color: $color-dot-active;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$color-green:        #84A178;
+$color-yellow:       #F8D24E;
+$color-yellow-panel: #F8D24EB2;
+$color-white:        #FCFCFC;
+$color-black:        #000000;
+$color-dark:         #131313;
+$color-dot-active:   #84A178;
+$color-dot-inactive: #D9D9D9;
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-seymour:    'Seymour One', sans-serif;
+
+$radius-circle:  140px;
+$radius-card:    10px;
+$radius-img:     8px;
+$radius-btn:     10px;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
