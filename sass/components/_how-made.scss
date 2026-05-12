@@ -1,0 +1,223 @@
+.how-made {
+    background-color: $color-green;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+
+
+    &__container {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 40px 20px 60px;
+    }
+
+    &__top {
+        @include flex-column-center;
+    }
+
+    &__subtitle {
+        @include montserrat(700, 18px, 100%, $color-white);
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+        width: 210px;
+    }
+
+    &__title {
+        font-family: $font-seymour;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0.04em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-white;
+        margin: 0 0 32px;
+        width: 200px;
+    }
+
+    &__img-wrap {
+        position: relative;
+        width: 278px;
+        height: 278px;
+        margin: 0 auto 32px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background-color: $color-yellow-panel;
+            border-radius: 50%;
+            z-index: 0;
+        }
+    }
+
+    &__img {
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
+        width: 278px;
+        height: 278px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__content {
+        @include flex-column-center;
+        width: 100%;
+    }
+
+    &__text {
+        @include montserrat(400, 12px, 176%, $color-white);
+        letter-spacing: 0.04em;
+        text-align: center;
+        margin: 0 0 12px;
+
+        &:last-of-type {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__btn {
+        @include yellow-btn;
+    }
+
+    &__stats {
+        @include flex-column-center;
+        margin-top: 48px;
+    }
+
+    &__stat {
+        @include flex-column-center;
+        width: 100%;
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__stat-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 12px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    &__stat-number {
+        @include montserrat(700, 36px, 100%, $color-white);
+        letter-spacing: 0.04em;
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &__stat-desc {
+        @include montserrat(400, 12px, 170%, $color-white);
+        letter-spacing: 0;
+        text-align: center;
+        margin: 0;
+        max-width: 200px;
+    }
+}
+
+.modal {
+    @include overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+
+    &__window {
+        position: relative;
+        z-index: 1;
+        width: 340px;
+        background-color: $color-white;
+        border-radius: $radius-card;
+        border: 2px solid $color-yellow;
+        padding: 32px 20px;
+        box-sizing: border-box;
+        @include flex-column-center;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    &__close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 28px;
+        height: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: $color-dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        outline: none;
+    }
+
+    &__title {
+        @include montserrat(700, 22px, 100%, $color-dark);
+        margin: 0 0 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__video {
+        width: 100%;
+        height: 228px;
+        background-color: $color-dark;
+        border-radius: $radius-img;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        flex-shrink: 0;
+    }
+
+    &__play {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 2px solid $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+    }
+
+    &__text {
+        @include montserrat(400, 14px, 176%, $color-dark);
+        letter-spacing: 0;
+        margin: 0;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}

@@ -1,0 +1,9 @@
+.footer__rights {
+    background-color: $color-green;
+    padding: 10px 0;
+
+    .copyright {
+        @include montserrat(400, 12px, 1.5, #7a7a7a);
+        text-align: center;
+    }
+}

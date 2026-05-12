@@ -1,0 +1,13 @@
+.contacts__section {
+    background-color: $color-green;
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    .contacts__flex {
+        @include flex-column-center;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

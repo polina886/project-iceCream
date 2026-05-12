@@ -1,0 +1,16 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/how-made";
+@import "./components/reviews";
+@import "../sass/components/header";
+@import "../sass/components/headerHero";
+@import "../sass/components/hero";
+@import "../sass/components/location";
+@import "../sass/components/contacts";
+@import "../sass/components/footer";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
