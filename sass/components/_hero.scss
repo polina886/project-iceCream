@@ -34,6 +34,12 @@
         display: flex;
         align-items: end;
         justify-content: center;
+        transition: transform 0.3s ease;
+        
+    }
+
+    .hero__art-IceCream:hover {
+        transform: translateY(-5px);
     }
 
     .hero__art-IceCoffee {
@@ -46,6 +52,11 @@
         display: flex;
         align-items: end;
         justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    .hero__art-IceCoffee:hover {
+        transform: translateY(-5px);
     }
 
     .hero__art-Milkshakes {
@@ -58,6 +69,11 @@
         display: flex;
         align-items: end;
         justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    .hero__art-Milkshakes:hover {
+        transform: translateY(-5px);
     }
 
     .hero__circle-IceCream {
@@ -70,6 +86,12 @@
         position: absolute;
         top: -30%;
         left: 14%;
+        overflow: hidden;
+    }
+
+    .hero__art-IceCream:hover .hero__circle-IceCream > div  {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
     }
 
     .hero__circle-IceCoffee {
@@ -82,6 +104,12 @@
         position: absolute;
         top: -30%;
         left: 14%;
+        overflow: hidden;
+    }
+
+    .hero__art-IceCoffee:hover .hero__circle-IceCoffee > div {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
     }
 
     .hero__circle-Milkshakes {
@@ -94,6 +122,12 @@
         position: absolute;
         top: -30%;
         left: 14%;
+        overflow: hidden;
+    }
+
+    .hero__art-Milkshakes:hover .hero__circle-Milkshakes > div  {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
     }
 
     .hero__circle-IceCream > div {
@@ -106,6 +140,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: -10px;
+        
     }
 
     .hero__circle-IceCoffee > div {
@@ -231,6 +266,61 @@
 
         .hero__container > div {
             grid-template-columns: repeat(3, 1fr);
+            max-width: 800px;
+        }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1440px) {
+        height: 836px;
+
+        .hero__art-IceCream,
+        .hero__art-IceCoffee,
+        .hero__art-Milkshakes {
+            max-width: 224px;
+            min-width: 224px;
+            height: 420px;
+        }
+
+        .hero__circle-IceCream,
+        .hero__circle-IceCoffee,
+        .hero__circle-Milkshakes {
+            left: 4%;
+        }
+
+        .hero__container {
+            height: 836px;
+        }
+
+        .hero__container > div {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 800px;
+        }
+    }
+
+    @media (min-width: 1440px) and (max-width: 2560px) {
+        height: 836px;
+
+        .hero__art-IceCream,
+        .hero__art-IceCoffee,
+        .hero__art-Milkshakes {
+            max-width: 224px;
+            min-width: 224px;
+            height: 420px;
+        }
+
+        .hero__circle-IceCream,
+        .hero__circle-IceCoffee,
+        .hero__circle-Milkshakes {
+            left: 4%;
+        }
+
+        .hero__container {
+            height: 836px;
+        }
+
+        .hero__container > div {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 800px;
         }
     }
 }
