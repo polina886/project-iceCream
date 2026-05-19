@@ -135,6 +135,10 @@
   width: 50px;
   height: 50px;
   margin: 0 auto 12px;
+  transition: transform 0.3s ease;
+}
+.how-made__stat-icon:hover {
+  transform: scale(1.1);
 }
 .how-made__stat-icon img {
   width: 100%;
@@ -435,6 +439,10 @@
 .reviews__author-avatar {
   margin-bottom: 32px;
   border: 3px solid #fcfcfc;
+  transition: transform 0.3s ease;
+}
+.reviews__author-avatar:hover {
+  transform: scale(1.05);
 }
 .reviews__card {
   width: 280px;
@@ -700,20 +708,223 @@ header .header__nav > svg {
   top: 4%;
   left: 10%;
 }
+header .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .modal-buyNow {
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 568px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+header .modal-buyNow .btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000000;
+}
+header .modal-buyNow__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+header .modal-buyNow__products {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+header .modal-buyNow__card {
+  width: 132px;
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+header .card__img-thumb {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  border-radius: 50% 50% 0 0;
+  overflow: hidden;
+}
+header .card__img-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .card__title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+header .card--green {
+  border-color: #84a178;
+}
+header .card--yellow {
+  border-color: #f8d24e;
+}
+header .card--orange {
+  border-color: #d6936d;
+}
+header .modal-buyNow__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+header .modal-buyNow__input,
+header .modal-buyNow__textarea {
+  width: 100%;
+  max-width: 368px;
+  background-color: #fcf8eb;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  outline: none;
+}
+header .modal-buyNow__textarea {
+  height: 84px;
+  resize: none;
+}
+header .modal-buyNow__submit-btn {
+  background-color: #f8d24e;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 34px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 250ms ease;
+}
+header .modal-buyNow__submit-btn:hover {
+  background-color: #f8d24e;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  header .modal-buyNow {
+    padding: 20px 15px;
+    max-width: 290px;
+  }
+  header .modal-buyNow__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  header .modal-buyNow__products {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  header .modal-buyNow__card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 6px 12px;
+    gap: 12px;
+  }
+  header .card__img-thumb {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  header .card__title {
+    font-size: 12px;
+  }
+  header .modal-buyNow .btn {
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+  }
+}
 @media (min-width: 425px) and (max-width: 768px) {
   header {
     height: 415px;
+  }
+  header .modal-buyNow {
+    padding: 30px 20px;
+    max-width: 410px;
+  }
+  header .modal-buyNow__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  header .modal-buyNow__products {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  header .modal-buyNow__card {
+    width: 110px;
+    padding: 8px;
+  }
+  header .card__img-thumb {
+    width: 75px;
+    height: 75px;
+  }
+  header .card__title {
+    font-size: 11px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     height: 415px;
   }
+  header .modal-buyNow {
+    padding: 30px 20px;
+    max-width: 410px;
+  }
+  header .modal-buyNow__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  header .modal-buyNow__products {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  header .modal-buyNow__card {
+    width: 110px;
+    padding: 8px;
+  }
+  header .card__img-thumb {
+    width: 75px;
+    height: 75px;
+  }
+  header .card__title {
+    font-size: 11px;
+  }
   header .buy__btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F8D24E;
+    background-color: #f8d24e;
     min-width: 151px;
     max-width: 152px;
     height: 42px;
